@@ -3,9 +3,9 @@
 A basic structure for working with django and docker
 
 ---
- How install docker: https://docs.docker.com/engine/install/
---
- How install docker-compose: https://docs.docker.com/compose/install/
+ ### How install docker: https://docs.docker.com/engine/install/
+
+ ### How install docker-compose: https://docs.docker.com/compose/install/
 ---
 
 ## - commands to run the project

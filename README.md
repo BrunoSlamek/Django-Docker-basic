@@ -19,7 +19,7 @@ docker-compose up
 
 ## - comandos utéis para gerenciar projetos do django
 
-Depois que rodar (docker-compose up) em um terminal, abra outro dentro da raiz do projeto e rode >
+Depois que rodar (docker-compose up) em um terminal, abra outro dentro da raiz do projeto e rode:
 
 Para fazer migração:
 ```bash

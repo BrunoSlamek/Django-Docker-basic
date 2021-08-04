@@ -2,73 +2,72 @@
 
 A basic structure for working with django and docker
 
+For this model it is necessary:
+  - [x] Docker
+  - [x] Docker-compose
+  - [x] Django (knowledge)
+
 ---
  ### How install docker: https://docs.docker.com/engine/install/
 
  ### How install docker-compose: https://docs.docker.com/compose/install/
 ---
 
-## - commands to run the project
+## Commands to run the project
 
-Quando clonar o projeto, terá um container docker em mãos pronto para rodar na sua maquina local,
-mas vai ter que baixar as dependencias. Então rode para começar o seu container:
+When cloning the project, you will have a docker container ready to run on your local machine, but you will have to start for the docker to download the necessary dependencies. Then run to start your container:
 
 ```bash
 docker-compose up
 ```
+After that, your django container is running, go to "localhost: 8000" and you will see the django page.
 
-## - comandos utéis para gerenciar projetos do django
+The /core folder is the project, of the command "django-admin startproject core ."
 
-Depois que rodar (docker-compose up) em um terminal, abra outro dentro da raiz do projeto e rode:
+## Useful Commands for Managing Django Projects
 
-Para fazer migração:
+after running (docker-compose up) in your terminal, open another terminal in the root of the project and run:
+
+Makemigrations:
 ```bash
 docker-compose exec web python manage.py makemigrations
 ```
 
-Ainda em outro terminal
+still in another terminal, don't forget, another terminal!
 
-Para fazer migração pt2:
+Migrate:
 ```bash
 docker-compose exec web python manage.py migrate
 ```
 
-Para criar um superuser:
+Create a superuser:
 ```bash
 docker-compose exec web python manage.py createsuperuser
 ```
 
-Para criar uma app:
+Create a app:
 ```bash
-docker-compose exec web django-admin startapp <nome da app>
+docker-compose exec web django-admin startapp <name_your_app_here>
 ```
 
-Os comandos seguem o mesmo padrão do django normal, a diferença é que rodamos com "docker-compose exec"
+The commands follow the same pattern as django, the way we run it changes only the beginning "docker-compose exec web"
 
-## - comandos utéis para gerenciar containers docker
+## Useful commands for managing your docker container
 
-Para verificar status dos containers em execução:
+To check the status of running containers:
 ```bash
 docker-compose ps
 ```
 
-Para parar os containers:
+To stop containers:
 ```bash
 docker-compose stop
 ```
 
-Para reinicar os containers:
+To restart containers:
 ```bash
 docker-compose restart
 ```
+---
 
-Para reinicar os containers:
-```bash
-docker-compose restart
-```
-
-
-
-
-
-
+Soon a template based on this one with mysql connection and also postgree

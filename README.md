@@ -11,6 +11,8 @@ For this model it is necessary:
  ### How install docker: https://docs.docker.com/engine/install/
 
  ### How install docker-compose: https://docs.docker.com/compose/install/
+ 
+ ### For knowledge of Django, see the official documentation.
 ---
 
 ## Commands to run the project
